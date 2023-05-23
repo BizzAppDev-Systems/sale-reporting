@@ -4,10 +4,10 @@
 
 from freezegun import freeze_time
 
-from odoo.tests import SavepointCase
+from odoo.tests import TransactionCase
 
 
-class TestSaleInvoiceDate(SavepointCase):
+class TestSaleInvoiceDate(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
